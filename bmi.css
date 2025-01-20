@@ -1,5 +1,5 @@
 body {
-    background-image: radial-gradient(SkyBlue, seashell);
+    background-image: radial-gradient(SkyBlue, transparent);
     /*background-image: linear-gradient(whke, SeaShell);*/
     min-width: 270px;
     overflow-x: hidden;
