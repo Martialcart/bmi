@@ -1,9 +1,8 @@
 body {
     background-color: white;
-    width: 97%;
     min-width: 270px;
     overflow-x: hidden;
-    overflow-y: scroll;
+    overflow-y: hidden;
 }
 
 #scale {

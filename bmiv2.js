@@ -2,6 +2,7 @@ const n_decimals = 2;
 const bmi_low = 18;
 const bmi_mid = 25;
 const bmi_high = 30
+const bmi_end_scale = 40;
 
 /*connects gui and action*/
 function handle_input() {
@@ -23,12 +24,12 @@ function handle_input() {
 
 /*returns kg, from bmi and height*/
 function kg(bmi, meter) {
-    return (bmi * Math.pow(meter,2)).toFixed(n_decimals);
+    return (bmi * Math.pow(meter,n_decimals)).toFixed(n_decimals);
 }
 
 /*returns bmi, from weight and height*/
 function bmi(kg, meter) {
-    return (kg / Math.pow(meter, 2)).toFixed(n_decimals);
+    return (kg / Math.pow(meter, n_decimals)).toFixed(n_decimals);
 }
 
 /*converts centimeters to meters*/
@@ -38,14 +39,15 @@ function to_m(cm) {
 
 /*returns the % of where the bmi result is placed on the screen*/
 function bmi_screen_scale(bmi) {
-    const scale = bmi_high - bmi_low;
+    const scale = bmi_end_scale - bmi_low;
     const range = bmi - bmi_low;
     let result = 0;
 
     if (bmi < bmi_low) result = "0%";
-    else if (bmi < bmi_mid) result = (range / scale) * 65 + "%"; //number adjust for margin inconsistensies
-    else if (bmi_high < bmi) result = "80%";
-    else result = (range / scale) * 80 + "%"; //number adjust for margin inconsistensies
+    else if (bmi_end_scale < bmi) result = "90%";
+    else result = (range / scale) * 115 + "%"; //number adjust for margin inconsistensies
+	
+    console.log('bmi%: ' + result);
     
     return result;
 }
