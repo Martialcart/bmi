@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="nor">
+    <head>
+        <title>BMI</title>
+        <link rel="stylesheet" href="css/bmi.css?=v2">
+        <script type:module src="js/bmiv2.js?=v2" defer></script>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="calculate body mass index">
+    </head>
+    <body>
+	<header>
+            <h2>BMI kalkulator</h2>
+	</header>
+	<main>
+	    <form class="bmiInput">
+                <input id="weight_kg"type="number" oninput="handle_input()" placeholder="vekt i kg">
+                <input id="height_cm" type="number" oninput="handle_input()" placeholder="høyde i cm">
+	    </form>
+	    <section class="result" id="scale">
+		<div class="bmiColumn">
+		    <a>Undervektig</a>
+		    <a>18</a>
+                    <a id="r18">...</a>
+		</div>
+		<div class="bmiColumn">
+		    <a>Normalgrense</a>
+		    <a >25</a>
+		    <a id="r25">...</a>
+		</div>
+		<div class="bmiColumn">
+		    <a>Fedme</a>
+                    <a>30 </a>
+                    <a id="r30">...</a>
+		</div>
+		<b id="bmi">...</b>
+	    </section>
+	</main>
+	<footer>
+                <p>BMI står for "body mass index" og er ett ca mål på hvor sunn vekten din er.</p>
+                <a href="https://no.wikipedia.org/wiki/Kroppsmasseindeks" target="_blank">mer om BMI på Wikipedia</a>
+	</footer>
+    </body>    
+</html>
