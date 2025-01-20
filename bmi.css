@@ -16,6 +16,10 @@ body {
     margin: 0;
 }
 
+.link {
+    color: white;
+}
+
 .bmiInput {
     display: flex;
     justify-content: space-between;
