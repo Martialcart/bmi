@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="nor">
+    <head>
+        <title>BMI</title>
+        <link rel="stylesheet" href="bmi.css">
+        <script type:module src="bmiv2.js" defer></script>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="calculate body mass index">
+    </head>
+    <body>
+	<header class="header">
+            <h2 class="header">BMI kalkulator</h2>
+	    <a href="https://no.wikipedia.org/wiki/Kroppsmasseindeks" target="_blank">mer om BMI</a>
+	</header>
+	<main>
+	    <form class="bmiInput">
+		<input id="height_cm" type="number" oninput="handle_input()" placeholder="høyde i cm">
+                <input id="weight_kg" type="number" oninput="handle_input()" placeholder="vekt i kg">
+	    </form>
+	    <section class="result" id="scale">
+		<div class="bmiColumn">
+		    <a>Undervektig</a>
+		    <a>18</a>
+                    <a id="r18">...</a>
+		</div>
+		<div class="bmiColumn">
+		    <a>Normal</a>
+		    <a >25</a>
+		    <a id="r25">...</a>
+		</div>
+		<div class="bmiColumn">
+		    <a>Fedme</a>
+                    <a>30 </a>
+                    <a id="r30">...</a>
+		</div>
+		<b id="bmi">...</b>
+	    </section>
+	</main>
+	<footer>
+	</footer>
+    </body>    
+</html>
