@@ -13,13 +13,13 @@ body {
 
 .header {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     margin: 0;
 }
 
 .bmiInput {
     display: flex;
-    justify-content: space-around;
+    justify-content: flex-start;
     flex-wrap: wrap;
 }
 .result {
