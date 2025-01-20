@@ -15,8 +15,14 @@
 	</header>
 	<main>
 	    <form class="bmiInput">
-		<input id="height_cm" type="number" oninput="handle_input()" placeholder="høyde i cm">
-                <input id="weight_kg" type="number" oninput="handle_input()" placeholder="vekt i kg">
+		<label for="height_cm">
+		    <input id="height_cm" type="number" oninput="handle_input()" placeholder="Høyde">
+		    Cm
+		</label>
+		<label for="weight_kg">
+		    <input id="weight_kg" type="number" oninput="handle_input()" placeholder="Vekt">
+		    Kg
+		</label>
 	    </form>
 	    <section class="result" id="scale">
 		<div class="bmiColumn">

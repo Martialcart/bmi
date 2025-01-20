@@ -3,6 +3,7 @@ const bmi_low = 18;
 const bmi_mid = 25;
 const bmi_high = 30
 const bmi_end_scale = 40;
+const scale_max = 100;
 
 /*connects gui and action*/
 function handle_input() {
@@ -44,8 +45,8 @@ function bmi_screen_scale(bmi) {
     let result = 0;
 
     if (bmi < bmi_low) result = "0%";
-    else if (bmi_end_scale < bmi) result = "90%";
-    else result = (range / scale) * 115 + "%"; //number adjust for margin inconsistensies
+    else if (bmi_end_scale < bmi) result = scale_max + '%'
+    else result = (range / scale) * scale_max + "%"; //number adjust for margin inconsistensies
 	
     console.log('bmi%: ' + result);
     
