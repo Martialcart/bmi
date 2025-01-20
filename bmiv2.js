@@ -2,8 +2,8 @@ const n_decimals = 2;
 const bmi_low = 18;
 const bmi_mid = 25;
 const bmi_high = 30
-const bmi_end_scale = 40;
-const scale_max = 100;
+const bmi_end_scale = 37.5;
+const scale_max = 95;
 
 /*connects gui and action*/
 function handle_input() {
