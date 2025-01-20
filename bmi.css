@@ -1,5 +1,6 @@
 body {
-    background-color: white;
+    background-color: WhiteSmoke;
+    background-image: linear-gradient(whiteSmoke, SeaShell);
     min-width: 270px;
     overflow-x: hidden;
     overflow-y: hidden;
